@@ -1,0 +1,246 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  cursor: pointer;
+}
+
+body{
+  color: #222;
+  background-color: #f5f5f5; /* set background color */
+}
+
+img{
+  max-width: 100%;
+}
+
+main{
+  padding: 10px;
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  text-decoration: none;
+  color: #222;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: #555;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: #222;
+}
+
+
+div.post{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: #fff; /* set background color */
+  padding: 20px; /* add padding */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* add box-shadow */
+}
+
+@media screen and (min-width: 700px){
+  div.post{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+div.post div.texts h2{
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+div.post div.texts a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+div.post p.info{
+  margin: 6px 0;
+  color: #888;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px
+}
+
+div.post p.info a.author{
+  color: #333;
+}
+
+div.post p.summary{
+  margin: 5px 0 ;
+  line-height: 1.4rem;
+}
+
+
+form.login, form.register{
+  max-width:  400px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input{
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  background-color: #eee;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+
+button{
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form.login h1, form.register h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #555;
+}
+
+/* Style the main container of the blog post */
+div.post-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the image container inside the post-page */
+  div.post-page div.image {
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Style the image inside the image container */
+  div.post-page div.image img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+  }
+  
+  /* Style the title of the blog post */
+  div.post-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style the date of the blog post */
+  div.post-page time {
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    color: #aaa;
+    margin: 10px 0;
+  }
+  
+  /* Style the author of the blog post */
+  div.post-page div.author {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style the content of the blog post */
+  div.post-page div.content p {
+    line-height: 1.7rem;
+    margin: 30px 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Style the list items in the blog post */
+  div.post-page div.content li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Style the edit row at the bottom of the blog post */
+  div.post-page div.edit-row {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the edit button in the edit row */
+  div.post-page a.edit-btn {
+    background-color: #333;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  /* Style the SVG icons in the edit button */
+  a svg {
+    height: 20px;
+    color: #fff;
+  }
