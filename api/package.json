@@ -1,6 +1,10 @@
 {
   "scripts":{
+<<<<<<< HEAD
     "start": "node index.js",
+=======
+    "start": "nodemon index.js",
+>>>>>>> 99898e2c482ada9275892c67532bff0542339eb5
     "build" : "npm i"
   },
   "dependencies": {
