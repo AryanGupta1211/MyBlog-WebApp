@@ -19,7 +19,7 @@ const secret = process.env.SECRET;
 
 const salt = bcrypt.genSaltSync(10);
 
-app.use(cors({credentials:true,origin:'https://steady-faloodeh-447b0f.netlify.app/'}));
+app.use(cors({credentials:true,origin:'http://localhost:3000'}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
