@@ -9,7 +9,7 @@ export default function PostPage() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://api-two-amber.vercel.app/post/${id}`)
+    fetch(`http://localhost:4000/post/${id}`)
       .then((response) => {
         response.json().then((postInfo) => {
           setPostInfo(postInfo);
@@ -51,7 +51,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`https://api-two-amber.vercel.app/${postInfo.cover}`} alt="" />
+        <img src={`http://localhost:4000/${postInfo.cover}`} alt="" />
       </div>
       <div
         className="content"
