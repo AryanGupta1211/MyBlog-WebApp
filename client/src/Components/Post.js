@@ -10,7 +10,7 @@ export default function Post({_id, title, summary, cover, content, createdAt, au
       <div className="image">
         <Link to={`/post/${_id}`}>
         <img
-          src={'http://localhost:4000/'+ cover}
+          src={'https://myblog-api-bc6b.onrender.com/'+ cover}
           alt=""
         />
         </Link>
